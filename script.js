@@ -9,7 +9,7 @@ getQuote=()=>{
     .then((item)=> { 
         console.log(item)
         quote.textContent=item.content
-        author.textContent=item.author
+        author.textContent=`~ ${item.author}`
 
     })
 }
